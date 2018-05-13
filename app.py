@@ -25,4 +25,4 @@ def post_van():
 
 @app.route('/getvm')
 def get_vm():
-    return 'Getting from Volunteer Match'
+    return render_template('getvm.html')
