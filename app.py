@@ -19,7 +19,7 @@ def welcome():
 
 @app.route('/postvan')
 def post_van():
-    return 'Posting to NGP VAN'
+    return render_template('welcome.html')
 
 #GET route Volunteer Match
 
