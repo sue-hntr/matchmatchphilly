@@ -77,8 +77,6 @@ def results():
 
 @app.route('/postvan')
 def post_van():
-	def post_van():
-	print("Here we go")
 	url = 'https://api.securevan.com/v4/echoes'
 	username = 'demo.usersite.api'
 	password = 'apikeyhere|1'
@@ -87,6 +85,7 @@ def post_van():
 	r = requests.post(url,
 	 auth=HTTPBasicAuth(username, password),
 	 json=payload, headers=headers)
+
 	return 'Post to NGP VAN'
 
 #GET route Volunteer Match
